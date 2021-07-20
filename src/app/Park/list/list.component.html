@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>Parques</h3>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Nombre del parque</th>
+                        <th>Descripción</th>
+                        <th>Fecha de inauguración</th>
+                        <th>Provincia</th>
+                        <th>Cantón</th>
+                        <th>Distrito</th>
+                        <th>Dirección</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let park of parks" class="text-center">
+                        <td>{{park.name}}</td>
+                        <td>{{park.description}}</td>
+                        <td>{{park.openingDate}}</td>
+                        <td>{{park.province}}</td>
+                        <td>{{park.canton}}</td>
+                        <td>{{park.district}}</td>
+                        <td>{{park.address}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
